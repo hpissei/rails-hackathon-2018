@@ -1,0 +1,22 @@
+<h1>Person</h1>
+<script>
+$.ajax({
+    url:"http://localhost:3000/persons.json",
+    success:function(data)
+    {
+        console.log(data);
+        data.map(function(data,index)
+        {
+            $("table").append("<tr><td>"+data.id+"</td><td>"+data.first_name+"</td><td>"+data.last_name+"</td><td>"+data.date_of_birth+"<td>"+data.age+"</td></tr>");
+
+        })
+    }
+});
+
+</script>
+
+<table class="table table-striped">
+    <tr>
+        <th>Id</th><th>First Name</th><th>Last Name</th><th>Date of Birth</th><th>Age</th>
+    </tr>
+</table>
