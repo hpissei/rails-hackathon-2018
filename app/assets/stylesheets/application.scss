@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ .list-group{
+     margin: 0 0 0 0;
+    max-height: 300px;
+    margin-bottom: 10px;
+    //overflow:scroll;
+    //-webkit-overflow-scrolling: touch;
+}
+ul li a:hover{
+    background-color:#dff0d8;
+    text-decoration: none;
+}
