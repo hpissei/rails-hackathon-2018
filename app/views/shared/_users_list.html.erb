@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <ul  class="list-group list-group-size" style="width:200px">
+        <ul  class="list-group list-group-size" >
             <% users.each do |u|%>
                 <li class="list-group-item list-group-item-success" ><%=link_to u.email,"homes/savemessage" ,id: dom_id(u),controller: "users",action: "index",remote: true,method: :get %></li>
             <%end%>
